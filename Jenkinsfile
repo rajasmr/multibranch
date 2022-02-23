@@ -9,10 +9,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
-                sh 'env.sh'
-                }
-            }
+                   sh '/tmp/scripts/env.sh'
+              }
         }
     }
 }
