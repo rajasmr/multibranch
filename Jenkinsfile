@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                sh env.sh
+                sh 'env.sh'
                 }
             }
         }
