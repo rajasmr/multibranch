@@ -1,7 +1,12 @@
 pipeline {
     agent any
 
-   stages {
+    environment {
+        DISABLE_AUTH = 'true'
+        DB_ENGINE    = 'sqlite'
+    }
+
+    stages {
         stage('Build') {
             steps {
                    sh '/tmp/scripts/env.sh'
@@ -9,4 +14,3 @@ pipeline {
         }
     }
 }
-© 2022 GitHub, Inc.
