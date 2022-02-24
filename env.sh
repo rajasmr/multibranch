@@ -14,6 +14,8 @@ then
   echo "you are in $BRANCH_NAME"
   echo "KAFKA_HOST=raja.feature" >>feature.env
   echo "PASSWORD=sathya123" >>feature.env
+  cp feature.env .env
+  >feature.env
 else
    echo "you are not in the correct Branch"
 
