@@ -7,6 +7,8 @@ then
   echo "you are in $BRANCH_NAME"
   echo "KAFKA_HOST=raja1_dev" >>dev.env
   echo  "PASSWORD=raja123" >>dev.env
+  cp dev.env .env
+  >dev.env
 elif [ $BRANCH_NAME == feature ]
 then
   echo "you are in $BRANCH_NAME"
