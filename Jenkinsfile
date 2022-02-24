@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                   sh 'cat env.sh'
+                   sh 'chmod +x env.sh'
+                   sh 'env.sh'
               }
         }
     }
