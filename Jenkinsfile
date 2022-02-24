@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                   sh '/env.sh'
+                   sh '${WORKSPACE}/env.sh'
               }
         }
     }
