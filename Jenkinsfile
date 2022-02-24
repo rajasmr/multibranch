@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                    sh 'chmod +x env.sh'
-                   sh 'env.sh'
+                   sh '${WORKSPACE}/env.sh'
               }
         }
     }
